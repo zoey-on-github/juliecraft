@@ -16,7 +16,7 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.example.JulieCraft"
 		],
 		"client": [
 			"com.example.ExampleModClient"
