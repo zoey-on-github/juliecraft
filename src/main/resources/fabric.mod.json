@@ -3,9 +3,9 @@
 	"id": "juliecraft",
 	"version": "${version}",
 	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "fishing mod i think. yeah",
 	"authors": [
-		"Me!"
+		"julie"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
