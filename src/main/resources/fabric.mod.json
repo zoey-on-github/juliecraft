@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.JulieCraft"
+          "io.zoeyongithub.JulieCraft"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+          "io.zoeyongithub.ExampleModClient"
 		]
 	},
 	"mixins": [

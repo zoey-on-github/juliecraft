@@ -1,9 +1,12 @@
-package com.example;
+package io.zoeyongithub;
 
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -25,5 +28,8 @@ public class JulieCraft implements ModInitializer {
 		// Proceed with mild caution.
 		Registry.register(Registries.ITEM, new Identifier("juliething", "custom_item"), CUSTOM_ITEM);
 		LOGGER.info("julie wuz here");
+		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(content -> {
+			content.addAfter(Items.FISHING_ROD, CUSTOM_ITEM);
+		});
 	}
 }
