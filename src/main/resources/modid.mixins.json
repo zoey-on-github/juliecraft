@@ -3,7 +3,7 @@
 	"package": "io.zoeyongithub.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-      "ExampleMixin"
+      "io.zoeyongithub.mixin.ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

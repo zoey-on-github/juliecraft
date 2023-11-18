@@ -1,4 +1,4 @@
-package com.example;
+package io.zoeyongithub;
 
 import net.fabricmc.api.ClientModInitializer;
 
