@@ -10,13 +10,15 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.apache.commons.io.input.TeeInputStream;
 
+import java.util.List;
+
 public class CustomItem extends Item {
     public CustomItem(Settings settings) {
         super(settings);
     }
 @Override
-public void appendTooltip (ItemStack itemStack, World world, List tooltip, TooltipContext tooltipContext){
-        tooltip.add(Text.translatable("item.juliecrraft.custom_item.tooltip"));
+public void appendTooltip (ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext){
+        tooltip.add(Text.translatable("this is my item! :D"));
 }
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
